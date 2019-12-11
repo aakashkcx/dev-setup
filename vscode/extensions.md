@@ -1,0 +1,13 @@
+- Bracket Pair Colorizer
+- C/C++
+- Code Spell Checker
+- ESLint
+- Language Support for Java(TM) by Red Hat
+- Markdown All in One
+- Material Icon Theme
+- Prettier - Code formatter
+- Python
+- Remote - SHH
+- Remote - SHH: Editing Configuration Files
+- Remote - WSL
+- Visual Studio IntelliCode
