@@ -19,3 +19,15 @@ function Prompt {
     Return " "
 
 }
+
+function Uni {
+	Set-Location "C:\Users\Aakash\Google Drive\University\"
+}
+
+function ll {
+	ls.exe -AFhl
+}
+
+function lsl {
+	ls.exe -AFhl | less.exe
+}
