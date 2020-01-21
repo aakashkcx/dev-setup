@@ -6,6 +6,10 @@
 
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
 
+    "initialCols": 120,
+    "initialRows": 30,
+    "snapToGridOnResize": true,
+
     "profiles": [
         {
             // Make changes here to the powershell.exe profile
@@ -14,9 +18,9 @@
             "commandline": "powershell.exe",
             "hidden": false,
 
-            "colorScheme": "One Half Dark",
-            "fontFace": "Inconsolata",
-            "fontSize": 14,
+            "colorScheme": "Dark",
+            "fontFace": "Fira Code",
+            "fontSize": 12,
             "useAcrylic": true,
             "acrylicOpacity": 0.75,
             "padding": "10, 10, 10, 10"
@@ -28,9 +32,9 @@
             "commandline": "cmd.exe",
             "hidden": false,
 
-            "colorScheme": "Campbell",
-            "fontFace": "Inconsolata",
-            "fontSize": 14,
+            "colorScheme": "Dark",
+            "fontFace": "Fira Code",
+            "fontSize": 12,
             "useAcrylic": true,
             "acrylicOpacity": 0.75,
             "padding": "10, 10, 10, 10"
@@ -43,9 +47,9 @@
             "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
             "hidden": false,
 
-            "colorScheme": "One Half Dark",
-            "fontFace": "Inconsolata for Powerline",
-            "fontSize": 14,
+            "colorScheme": "Dark",
+            "fontFace": "Fira Code",
+            "fontSize": 12,
             "useAcrylic": true,
             "acrylicOpacity": 0.8,
             "padding": "10, 10, 10, 10"
@@ -56,9 +60,9 @@
             "name": "Ubuntu",
             "source": "Windows.Terminal.Wsl",
 
-            "colorScheme": "One Half Dark",
-            "fontFace": "Inconsolata for Powerline",
-            "fontSize": 14,
+            "colorScheme": "Dark",
+            "fontFace": "Fira Code",
+            "fontSize": 12,
             "background": "#300a24",
             "useAcrylic": true,
             "acrylicOpacity": 0.8,
@@ -72,8 +76,8 @@
             "startingDirectory": "%USERPROFILE%",
 
             "colorScheme": "Solarized Dark",
-            "fontFace": "Inconsolata for Powerline",
-            "fontSize": 14,
+            "fontFace": "Fira Code",
+            "fontSize": 12,
             "useAcrylic": true,
             "acrylicOpacity": 0.9,
             "padding": "10, 10, 10, 10"
@@ -87,7 +91,29 @@
     ],
 
     // Add custom color schemes to this array
-    "schemes": [],
+    "schemes": [
+        {
+            "name": "Dark",
+            "foreground": "#DDD",
+            "background": "#222",
+            "black": "#111",
+            "red": "#B11",
+            "green": "#1A1",
+            "yellow": "#C91",
+            "blue": "#13D",
+            "purple": "#92A",
+            "cyan": "#29D",
+            "white": "#DDD",
+            "brightBlack": "#777",
+            "brightRed": "#F55",
+            "brightGreen": "#4D4",
+            "brightYellow": "#FEA",
+            "brightBlue": "#49F",
+            "brightPurple": "#C4A",
+            "brightCyan": "#6DF",
+            "brightWhite": "#EEE"
+        }
+    ],
 
     // Add any keybinding overrides to this array.
     // To unbind a default keybinding, set the command to "unbound"
