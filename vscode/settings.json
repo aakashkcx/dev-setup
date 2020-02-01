@@ -5,5 +5,8 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
     "prettier.singleQuote": true,
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "editor.fontFamily": "Hasklig, Fira Code, Source Code Pro, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "git.ignoreLegacyWarning": true
 }
