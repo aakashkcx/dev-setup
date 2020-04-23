@@ -1,13 +1,24 @@
 # dev-setup
 
+## Table of Contents
+
+-   [OS](#os)
+    -   [Windows 10](#windows-10)
+    -   [Windows Subsystem for Linux (WSL)](#windows-subsystem-for-linux-wsl)
+-   [Text Editors](#text-editors)
+    -   [Visual Studio Code](#visual-studio-code)
+    -   [Sublime Text 3](#sublime-text-3)
+-   [Terminal](#terminal)
+    -   [Fonts](#fonts)
+    -   [Windows Terminal (Preview)](#windows-terminal-preview)
+-   [Fonts](#fonts)
+
 ## OS
 
 -   Windows 10
 -   Windows Subsystem for Linux (WSL)
 
 ### Windows 10
-
--   `windows/.gitconfig`
 
 ```
 [user]
@@ -19,15 +30,11 @@
 
 ```
 
--   `windows/.gitignore`
-
 ```
-node_modules/
+
 ```
 
 ### Windows Subsystem for Linux (WSL)
-
--   `wsl/.gitconfig`
 
 ```
 [user]
@@ -37,8 +44,6 @@ node_modules/
 	editor = nano
 	autocrlf = input
 ```
-
--   `windows/.gitignore`
 
 ```
 node_modules/
@@ -51,13 +56,17 @@ node_modules/
 
 ### Visual Studio Code
 
-#### Extensions
+-   [vscode/extensions.md](vscode/extensions.md)
 
--   Bracket Pair Colorizer
+```markdown
+-   Bracket Pair Colorizer 2
 -   C/C++
 -   Code Spell Checker
 -   ESLint
+-   Haskell Syntax Highlighting
+-   Haskelly
 -   Language Support for Java(TM) by Red Hat
+-   Live Server
 -   Markdown All in One
 -   Material Icon Theme
 -   Prettier - Code formatter
@@ -66,14 +75,17 @@ node_modules/
 -   Remote - SHH: Editing Configuration Files
 -   Remote - WSL
 -   Visual Studio IntelliCode
+```
 
-#### Settings
-
--   `vscode/settings.json`
+-   [vscode/settings.json](vscode/settings.json)
 
 ```json
 {
     "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "Fira Code, Source Code Pro, Consolas, monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.suggestSelection": "first",
     "terminal.integrated.cursorStyle": "line",
@@ -83,10 +95,9 @@ node_modules/
 }
 ```
 
--   `vscode/keybindings.json`
+-   [vscode/keybindings.json](vscode/keybindings.json)
 
 ```json
-// Place your key bindings in this file to override the defaultsauto[]
 [
     {
         "key": "ctrl+tab",
@@ -107,56 +118,50 @@ node_modules/
 ]
 ```
 
-### Sublime Text
+### Sublime Text 3
 
--   Add Sublime Text 3 to PATH: `C:\Program Files\Sublime Text 3`
--   In a terminal type `subl <filename/folder>`
+-   Add Sublime Text 3 to PATH: `C:\Program Files\Sublime Text 3`.
+-   In a terminal type `subl <filename/folder>`.
 
 ## Terminal
-
-### Fonts
-
--   [Inconsolata](https://fonts.google.com/specimen/Inconsolata)
--   [Inconsolata for Powerline](https://github.com/powerline/fonts/tree/master/Inconsolata).
 
 ### Windows Terminal (Preview)
 
 -   `windows-terminal/profiles.json`
 
 ```json
-// To view the default settings, hold "alt" while clicking on the "Settings" button.
-// For documentation on these settings, see: https://aka.ms/terminal-documentation
-
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
 
+    "initialCols": 120,
+    "initialRows": 30,
+    "snapToGridOnResize": true,
+
     "profiles": [
         {
-            // Make changes here to the powershell.exe profile
             "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
             "name": "Windows PowerShell",
             "commandline": "powershell.exe",
             "hidden": false,
 
-            "colorScheme": "One Half Dark",
-            "fontFace": "Inconsolata",
-            "fontSize": 14,
+            "colorScheme": "Dark",
+            "fontFace": "Fira Code",
+            "fontSize": 12,
             "useAcrylic": true,
             "acrylicOpacity": 0.75,
             "padding": "10, 10, 10, 10"
         },
         {
-            // Make changes here to the cmd.exe profile
             "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
             "name": "cmd",
             "commandline": "cmd.exe",
             "hidden": false,
 
-            "colorScheme": "Campbell",
-            "fontFace": "Inconsolata",
-            "fontSize": 14,
+            "colorScheme": "Dark",
+            "fontFace": "Fira Code",
+            "fontSize": 12,
             "useAcrylic": true,
             "acrylicOpacity": 0.75,
             "padding": "10, 10, 10, 10"
@@ -169,9 +174,9 @@ node_modules/
             "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
             "hidden": false,
 
-            "colorScheme": "One Half Dark",
-            "fontFace": "Inconsolata for Powerline",
-            "fontSize": 14,
+            "colorScheme": "Dark",
+            "fontFace": "Fira Code",
+            "fontSize": 12,
             "useAcrylic": true,
             "acrylicOpacity": 0.8,
             "padding": "10, 10, 10, 10"
@@ -182,9 +187,9 @@ node_modules/
             "name": "Ubuntu",
             "source": "Windows.Terminal.Wsl",
 
-            "colorScheme": "One Half Dark",
-            "fontFace": "Inconsolata for Powerline",
-            "fontSize": 14,
+            "colorScheme": "Dark",
+            "fontFace": "Fira Code",
+            "fontSize": 12,
             "background": "#300a24",
             "useAcrylic": true,
             "acrylicOpacity": 0.8,
@@ -198,8 +203,8 @@ node_modules/
             "startingDirectory": "%USERPROFILE%",
 
             "colorScheme": "Solarized Dark",
-            "fontFace": "Inconsolata for Powerline",
-            "fontSize": 14,
+            "fontFace": "Fira Code",
+            "fontSize": 12,
             "useAcrylic": true,
             "acrylicOpacity": 0.9,
             "padding": "10, 10, 10, 10"
@@ -212,11 +217,39 @@ node_modules/
         }
     ],
 
-    // Add custom color schemes to this array
-    "schemes": [],
+    "schemes": [
+        {
+            "name": "Dark",
+            "foreground": "#DDD",
+            "background": "#222",
+            "black": "#111",
+            "red": "#B11",
+            "green": "#1A1",
+            "yellow": "#C91",
+            "blue": "#13D",
+            "purple": "#92A",
+            "cyan": "#29D",
+            "white": "#DDD",
+            "brightBlack": "#777",
+            "brightRed": "#F55",
+            "brightGreen": "#4D4",
+            "brightYellow": "#FEA",
+            "brightBlue": "#49F",
+            "brightPurple": "#C4A",
+            "brightCyan": "#6DF",
+            "brightWhite": "#EEE"
+        }
+    ],
 
-    // Add any keybinding overrides to this array.
-    // To unbind a default keybinding, set the command to "unbound"
     "keybindings": []
 }
 ```
+
+## Fonts
+
+-   Fira Code
+    -   [GitHub](https://github.com/tonsky/FiraCode)
+    -   [Google Fonts](https://fonts.google.com/specimen/Fira+Code)
+-   Source Code Pro
+    -   [GitHub](https://github.com/adobe-fonts/source-code-pro)
+    -   [Google Fonts](https://fonts.google.com/specimen/Source+Code+Pro)
