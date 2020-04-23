@@ -134,7 +134,7 @@ node_modules/
 
 ### Windows Terminal (Preview)
 
--   `windows-terminal/profiles.json`
+-   [windows-terminal/profiles.json](windows-terminal/profiles.json)
 
 ```json
 {
