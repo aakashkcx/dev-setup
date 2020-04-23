@@ -20,6 +20,8 @@
 
 ### Windows 10
 
+-   [windows/.gitconfig](windows/.gitconfig)
+
 ```
 [user]
 	name = Aakash Kc
@@ -27,14 +29,17 @@
 [core]
 	editor = nano
 	autocrlf = true
-
 ```
 
-```
+-   [windows/.gitignore](windows/.gitignore)
 
+```
+node_modules/
 ```
 
 ### Windows Subsystem for Linux (WSL)
+
+-   [wsl/.gitconfig](wsl/.gitconfig)
 
 ```
 [user]
@@ -44,6 +49,8 @@
 	editor = nano
 	autocrlf = input
 ```
+
+-   [wsl/.gitignore](wsl/.gitignore)
 
 ```
 node_modules/
