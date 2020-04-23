@@ -1,4 +1,4 @@
-# dev-setup
+# Development Setup
 
 ## Table of Contents
 
