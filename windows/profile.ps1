@@ -20,8 +20,12 @@ function Prompt {
 
 }
 
+function GDrive {
+	Set-Location "~\Google Drive\"
+}
+
 function Uni {
-	Set-Location "C:\Users\Aakash\Google Drive\University\"
+	Set-Location "~\Google Drive\University\"
 }
 
 function ll {
