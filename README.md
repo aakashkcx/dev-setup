@@ -37,6 +37,8 @@
 node_modules/
 ```
 
+-   [windows/profile.ps1](windows/profile.ps1)
+
 ### Windows Subsystem for Linux (WSL)
 
 -   [wsl/.gitconfig](wsl/.gitconfig)
@@ -70,12 +72,14 @@ node_modules/
 -   C/C++
 -   Code Spell Checker
 -   ESLint
+-   GitLens — Git supercharged
 -   Haskell Syntax Highlighting
 -   Haskelly
 -   Language Support for Java(TM) by Red Hat
 -   Live Server
 -   Markdown All in One
 -   Material Icon Theme
+-   One Dark Pro
 -   Prettier - Code formatter
 -   Python
 -   Remote - SHH
@@ -88,10 +92,11 @@ node_modules/
 
 ```json
 {
+    "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "Fira Code, Source Code Pro, Consolas, monospace",
+    "editor.fontFamily": "Fira Code, Cascadia Code, Consolas, monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.suggestSelection": "first",
@@ -134,7 +139,7 @@ node_modules/
 
 ### Windows Terminal (Preview)
 
--   [windows-terminal/profiles.json](windows-terminal/profiles.json)
+-   [windows-terminal/settings.json](windows-terminal/settings.json)
 
 ```json
 {
@@ -142,113 +147,95 @@ node_modules/
 
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
 
-    "initialCols": 120,
-    "initialRows": 30,
-    "snapToGridOnResize": true,
+    "copyOnSelect": false,
+    "copyFormatting": false,
 
-    "profiles": [
-        {
-            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-            "name": "Windows PowerShell",
-            "commandline": "powershell.exe",
-            "hidden": false,
-
-            "colorScheme": "Dark",
-            "fontFace": "Fira Code",
-            "fontSize": 12,
-            "useAcrylic": true,
-            "acrylicOpacity": 0.75,
-            "padding": "10, 10, 10, 10"
-        },
-        {
-            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-            "name": "cmd",
-            "commandline": "cmd.exe",
-            "hidden": false,
-
-            "colorScheme": "Dark",
-            "fontFace": "Fira Code",
-            "fontSize": 12,
-            "useAcrylic": true,
-            "acrylicOpacity": 0.75,
-            "padding": "10, 10, 10, 10"
-        },
-        {
-            "guid": "{be1b1b1d-2ffa-4e4c-bb43-9d361c040b37}",
-            "name": "Git Bash",
-            "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
-            "startingDirectory": "%USERPROFILE%",
-            "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
-            "hidden": false,
-
-            "colorScheme": "Dark",
-            "fontFace": "Fira Code",
+    "profiles": {
+        "defaults": {
+            "fontFace": "Cascadia Code",
             "fontSize": 12,
             "useAcrylic": true,
             "acrylicOpacity": 0.8,
-            "padding": "10, 10, 10, 10"
+            "colorScheme": "Dark"
         },
-        {
-            "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-            "hidden": false,
-            "name": "Ubuntu",
-            "source": "Windows.Terminal.Wsl",
-
-            "colorScheme": "Dark",
-            "fontFace": "Fira Code",
-            "fontSize": 12,
-            "background": "#300a24",
-            "useAcrylic": true,
-            "acrylicOpacity": 0.8,
-            "padding": "10, 10, 10, 10"
-        },
-        {
-            "guid": "{04a70efe-b843-468a-a764-c6c04ba61969}",
-            "hidden": false,
-            "name": "Z Shell",
-            "commandline": "bash -c zsh",
-            "startingDirectory": "%USERPROFILE%",
-
-            "colorScheme": "Solarized Dark",
-            "fontFace": "Fira Code",
-            "fontSize": 12,
-            "useAcrylic": true,
-            "acrylicOpacity": 0.9,
-            "padding": "10, 10, 10, 10"
-        },
-        {
-            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-            "hidden": true,
-            "name": "Azure Cloud Shell",
-            "source": "Windows.Terminal.Azure"
-        }
-    ],
+        "list": [
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe"
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "Command Prompt",
+                "commandline": "cmd.exe"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure",
+                "hidden": true
+            },
+            {
+                "guid": "{be1b1b1d-2ffa-4e4c-bb43-9d361c040b37}",
+                "name": "Git Bash",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico"
+            },
+            {
+                "guid": "{99c3e393-ba8b-4d4c-8123-e98db4062586}",
+                "name": "Warwick SSH",
+                "commandline": "ssh warwick",
+                "icon": "https://d36jn9qou1tztq.cloudfront.net/static_war/render/id7/images/favicon.ico"
+            }
+        ]
+    },
 
     "schemes": [
         {
             "name": "Dark",
             "foreground": "#DDD",
             "background": "#222",
-            "black": "#111",
-            "red": "#B11",
+            "cursorColor": "#FFF",
+            "black": "#000",
+            "red": "#C11",
             "green": "#1A1",
-            "yellow": "#C91",
-            "blue": "#13D",
-            "purple": "#92A",
-            "cyan": "#29D",
-            "white": "#DDD",
-            "brightBlack": "#777",
+            "yellow": "#CA1",
+            "blue": "#26D",
+            "purple": "#929",
+            "cyan": "#2AA",
+            "white": "#EEE",
+            "brightBlack": "#666",
             "brightRed": "#F55",
-            "brightGreen": "#4D4",
-            "brightYellow": "#FEA",
-            "brightBlue": "#49F",
-            "brightPurple": "#C4A",
-            "brightCyan": "#6DF",
-            "brightWhite": "#EEE"
+            "brightGreen": "#3D3",
+            "brightYellow": "#FD8",
+            "brightBlue": "#69F",
+            "brightPurple": "#C4C",
+            "brightCyan": "#6EE",
+            "brightWhite": "#FFF"
         }
     ],
 
-    "keybindings": []
+    "keybindings": [
+        {
+            "command": { "action": "copy", "singleLine": false },
+            "keys": "ctrl+c"
+        },
+        { "command": "paste", "keys": "ctrl+v" },
+        { "command": "find", "keys": "ctrl+shift+f" },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        }
+    ]
 }
 ```
 
