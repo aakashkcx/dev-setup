@@ -1,18 +1,18 @@
--   Bracket Pair Colorizer 2
--   C/C++
--   Code Spell Checker
--   ESLint
--   GitLens — Git supercharged
--   Haskell Syntax Highlighting
--   Haskelly
--   Language Support for Java(TM) by Red Hat
--   Live Server
--   Markdown All in One
--   Material Icon Theme
--   One Dark Pro
--   Prettier - Code formatter
--   Python
--   Remote - SHH
--   Remote - SHH: Editing Configuration Files
--   Remote - WSL
--   Visual Studio IntelliCode
+- Bracket Pair Colorizer 2
+- C/C++
+- Code Spell Checker
+- ESLint
+- GitLens — Git supercharged
+- Haskell Syntax Highlighting
+- Haskelly
+- Language Support for Java(TM) by Red Hat
+- Live Server
+- Markdown All in One
+- Material Icon Theme
+- One Dark Pro
+- Prettier - Code formatter
+- Python
+- Remote - SHH
+- Remote - SHH: Editing Configuration Files
+- Remote - WSL
+- Visual Studio IntelliCode

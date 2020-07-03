@@ -2,5 +2,4 @@
 	name = Aakash Kc
 	email = aakashkcx@gmail.com
 [core]
-	editor = nano
 	autocrlf = input
