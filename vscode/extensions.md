@@ -1,10 +1,14 @@
 - Bracket Pair Colorizer 2
 - C/C++
 - Code Spell Checker
+- Debugger for Chrome
 - ESLint
 - GitLens — Git supercharged
 - Haskell Syntax Highlighting
 - Haskelly
+- Indented Block Highlighting
+- Java Dependency Viewer
+- JavaScript (ES6) Code Snippets
 - Language Support for Java(TM) by Red Hat
 - Live Server
 - Markdown All in One
@@ -15,4 +19,6 @@
 - Remote - SHH
 - Remote - SHH: Editing Configuration Files
 - Remote - WSL
+- Simple React Snippets
+- Vetur
 - Visual Studio IntelliCode

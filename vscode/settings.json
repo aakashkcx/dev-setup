@@ -11,5 +11,9 @@
   "editor.minimap.enabled": false,
   "terminal.integrated.fontFamily": "Cascadia Code, Consolas",
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorBlinking": true
+  "terminal.integrated.cursorBlinking": true,
+  "blockhighlight.background": ["150", "150", "150", ".05"],
+
+  "java.semanticHighlighting.enabled": true,
+  "java.configuration.checkProjectSettingsExclusions": false
 }

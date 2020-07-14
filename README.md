@@ -113,10 +113,14 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 - Bracket Pair Colorizer 2
 - C/C++
 - Code Spell Checker
+- Debugger for Chrome
 - ESLint
 - GitLens — Git supercharged
 - Haskell Syntax Highlighting
 - Haskelly
+- Indented Block Highlighting
+- Java Dependency Viewer
+- JavaScript (ES6) Code Snippets
 - Language Support for Java(TM) by Red Hat
 - Live Server
 - Markdown All in One
@@ -127,6 +131,8 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 - Remote - SHH
 - Remote - SHH: Editing Configuration Files
 - Remote - WSL
+- Simple React Snippets
+- Vetur
 - Visual Studio IntelliCode
 ```
 
@@ -146,7 +152,11 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
   "editor.minimap.enabled": false,
   "terminal.integrated.fontFamily": "Cascadia Code, Consolas",
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorBlinking": true
+  "terminal.integrated.cursorBlinking": true,
+  "blockhighlight.background": ["150", "150", "150", ".05"],
+
+  "java.semanticHighlighting.enabled": true,
+  "java.configuration.checkProjectSettingsExclusions": false
 }
 ```
 
