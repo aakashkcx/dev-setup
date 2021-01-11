@@ -4,8 +4,8 @@
 - Debugger for Chrome
 - ESLint
 - GitLens — Git supercharged
+- Haskell
 - Haskell Syntax Highlighting
-- Haskelly
 - Indented Block Highlighting
 - Java Dependency Viewer
 - JavaScript (ES6) Code Snippets
@@ -14,11 +14,11 @@
 - Markdown All in One
 - Material Icon Theme
 - One Dark Pro
+- Polacode
 - Prettier - Code formatter
 - Python
 - Remote - SHH
 - Remote - SHH: Editing Configuration Files
-- Remote - WSL
 - Simple React Snippets
 - Vetur
 - Visual Studio IntelliCode

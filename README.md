@@ -6,7 +6,7 @@
   - [Table of Contents](#table-of-contents)
   - [OS](#os)
     - [Windows 10](#windows-10)
-    - [Windows Subsystem for Linux (WSL)](#windows-subsystem-for-linux-wsl)
+    - [Linux](#linux)
   - [Text Editors](#text-editors)
     - [Visual Studio Code](#visual-studio-code)
     - [Sublime Text 3](#sublime-text-3)
@@ -15,9 +15,6 @@
   - [Fonts](#fonts)
 
 ## OS
-
-- Windows 10
-- Windows Subsystem for Linux 2 (WSL 2)
 
 ### Windows 10
 
@@ -29,6 +26,8 @@
 	email = aakashkcx@gmail.com
 [core]
 	autocrlf = true
+[color]
+	ui = true
 ```
 
 - [windows/profile.ps1](windows/profile.ps1)
@@ -64,9 +63,9 @@ function ll { ls.exe -AFhl }
 function lsl { ls.exe -AFhl | less.exe }
 ```
 
-### Windows Subsystem for Linux (WSL)
+### Linux
 
-- [wsl/.gitconfig](wsl/.gitconfig)
+- [linux/.gitconfig](linux/.gitconfig)
 
 ```
 [user]
@@ -74,9 +73,11 @@ function lsl { ls.exe -AFhl | less.exe }
 	email = aakashkcx@gmail.com
 [core]
 	autocrlf = input
+[color]
+	ui = true
 ```
 
-- [wsl/.bashrc](wsl/.bashrc)
+- [linux/.bashrc](linux/.bashrc)
 
 ```bash
 # Aliases
@@ -102,8 +103,9 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 
 ## Text Editors
 
-- Visual Studio Code
-- Sublime Text 3
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Sublime Text 3](https://www.sublimetext.com/)
+- [Notepad++](https://notepad-plus-plus.org/)
 
 ### Visual Studio Code
 
@@ -116,8 +118,8 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 - Debugger for Chrome
 - ESLint
 - GitLens — Git supercharged
+- Haskell
 - Haskell Syntax Highlighting
-- Haskelly
 - Indented Block Highlighting
 - Java Dependency Viewer
 - JavaScript (ES6) Code Snippets
@@ -126,11 +128,11 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 - Markdown All in One
 - Material Icon Theme
 - One Dark Pro
+- Polacode
 - Prettier - Code formatter
 - Python
 - Remote - SHH
 - Remote - SHH: Editing Configuration Files
-- Remote - WSL
 - Simple React Snippets
 - Vetur
 - Visual Studio IntelliCode
