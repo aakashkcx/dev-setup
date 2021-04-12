@@ -11,6 +11,7 @@
 - JavaScript (ES6) Code Snippets
 - Language Support for Java(TM) by Red Hat
 - Live Server
+- Live Share
 - Markdown All in One
 - Material Icon Theme
 - One Dark Pro
@@ -19,6 +20,5 @@
 - Python
 - Remote - SHH
 - Remote - SHH: Editing Configuration Files
-- Simple React Snippets
 - Vetur
 - Visual Studio IntelliCode

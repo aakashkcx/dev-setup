@@ -125,6 +125,7 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 - JavaScript (ES6) Code Snippets
 - Language Support for Java(TM) by Red Hat
 - Live Server
+- Live Share
 - Markdown All in One
 - Material Icon Theme
 - One Dark Pro
@@ -133,7 +134,6 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 - Python
 - Remote - SHH
 - Remote - SHH: Editing Configuration Files
-- Simple React Snippets
 - Vetur
 - Visual Studio IntelliCode
 ```
