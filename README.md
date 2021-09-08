@@ -111,6 +111,7 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 
 - [vscode/extensions.md](vscode/extensions.md)
 
+```markdown
 - Auto Close Tag
 - Auto Rename Tag
 - **Bracket Pair Colorizer 2**
@@ -137,6 +138,7 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 - Remote - SHH
 - Vetur
 - Visual Studio IntelliCode
+```
 
 - [vscode/settings.json](vscode/settings.json)
 
