@@ -1,24 +1,26 @@
-- Bracket Pair Colorizer 2
+- Auto Close Tag
+- Auto Rename Tag
+- **Bracket Pair Colorizer 2**
 - C/C++
-- Code Spell Checker
-- Debugger for Chrome
+- C#
+- **Code Spell Checker**
+- ES7 React/Redux/GraphQL/React-Native snippets
 - ESLint
-- GitLens — Git supercharged
+- Extension Pack for Java
+- **GitLens — Git supercharged**
 - Haskell
-- Haskell Syntax Highlighting
+- HTML CSS Support
 - Indented Block Highlighting
-- Java Dependency Viewer
-- JavaScript (ES6) Code Snippets
-- Language Support for Java(TM) by Red Hat
+- Live Sass Compiler
 - Live Server
 - Live Share
 - Markdown All in One
-- Material Icon Theme
-- One Dark Pro
+- **Material Icon Theme**
+- **One Dark Pro**
+- PHP Intelephense
 - Polacode
-- Prettier - Code formatter
+- **Prettier - Code formatter**
 - Python
 - Remote - SHH
-- Remote - SHH: Editing Configuration Files
 - Vetur
 - Visual Studio IntelliCode

@@ -12,8 +12,32 @@
   "terminal.integrated.fontFamily": "Cascadia Code, Consolas",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
-  "blockhighlight.background": ["150", "150", "150", ".05"],
 
   "java.semanticHighlighting.enabled": true,
-  "java.configuration.checkProjectSettingsExclusions": false
+  "java.configuration.checkProjectSettingsExclusions": false,
+
+  "python.formatting.provider": "black",
+  "python.pythonPath": "C:\\Program Files\\Python39\\python.exe",
+  "python.defaultInterpreterPath": "C:\\Program Files\\Python39\\python.exe",
+
+  "blockhighlight.background": ["150", "150", "150", ".05"],
+
+  "cSpell.language": "en-GB",
+
+  "git.ignoreLegacyWarning": true,
+  "remote.SSH.remotePlatform": {
+    "warwick": "linux"
+  },
+
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[java]": { "editor.defaultFormatter": "redhat.java" },
+  "[python]": { "editor.defaultFormatter": "ms-python.python" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
 }

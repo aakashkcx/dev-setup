@@ -111,32 +111,32 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 
 - [vscode/extensions.md](vscode/extensions.md)
 
-```markdown
-- Bracket Pair Colorizer 2
+- Auto Close Tag
+- Auto Rename Tag
+- **Bracket Pair Colorizer 2**
 - C/C++
-- Code Spell Checker
-- Debugger for Chrome
+- C#
+- **Code Spell Checker**
+- ES7 React/Redux/GraphQL/React-Native snippets
 - ESLint
-- GitLens — Git supercharged
+- Extension Pack for Java
+- **GitLens — Git supercharged**
 - Haskell
-- Haskell Syntax Highlighting
+- HTML CSS Support
 - Indented Block Highlighting
-- Java Dependency Viewer
-- JavaScript (ES6) Code Snippets
-- Language Support for Java(TM) by Red Hat
+- Live Sass Compiler
 - Live Server
 - Live Share
 - Markdown All in One
-- Material Icon Theme
-- One Dark Pro
+- **Material Icon Theme**
+- **One Dark Pro**
+- PHP Intelephense
 - Polacode
-- Prettier - Code formatter
+- **Prettier - Code formatter**
 - Python
 - Remote - SHH
-- Remote - SHH: Editing Configuration Files
 - Vetur
 - Visual Studio IntelliCode
-```
 
 - [vscode/settings.json](vscode/settings.json)
 
@@ -155,10 +155,34 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
   "terminal.integrated.fontFamily": "Cascadia Code, Consolas",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
-  "blockhighlight.background": ["150", "150", "150", ".05"],
 
   "java.semanticHighlighting.enabled": true,
-  "java.configuration.checkProjectSettingsExclusions": false
+  "java.configuration.checkProjectSettingsExclusions": false,
+
+  "python.formatting.provider": "black",
+  "python.pythonPath": "C:\\Program Files\\Python39\\python.exe",
+  "python.defaultInterpreterPath": "C:\\Program Files\\Python39\\python.exe",
+
+  "blockhighlight.background": ["150", "150", "150", ".05"],
+
+  "cSpell.language": "en-GB",
+
+  "git.ignoreLegacyWarning": true,
+  "remote.SSH.remotePlatform": {
+    "warwick": "linux"
+  },
+
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[java]": { "editor.defaultFormatter": "redhat.java" },
+  "[python]": { "editor.defaultFormatter": "ms-python.python" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
 }
 ```
 
