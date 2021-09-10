@@ -32,7 +32,8 @@
     "defaults": {
       "fontSize": 13,
       "padding": "10",
-      "useAcrylic": true
+      "useAcrylic": true,
+      "acrylicOpacity": 0.75
     },
     "list": [
       {

@@ -257,7 +257,8 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
     "defaults": {
       "fontSize": 13,
       "padding": "10",
-      "useAcrylic": true
+      "useAcrylic": true,
+      "acrylicOpacity": 0.75
     },
     "list": [
       {
