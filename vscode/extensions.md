@@ -1,26 +1,31 @@
 - Auto Close Tag
 - Auto Rename Tag
-- **Bracket Pair Colorizer 2**
+- Better Comments
 - C/C++
 - C#
 - **Code Spell Checker**
 - ES7 React/Redux/GraphQL/React-Native snippets
 - ESLint
-- Extension Pack for Java
+- _Extension Pack for Java_
 - **GitLens — Git supercharged**
-- Haskell
+- _Haskell_
 - HTML CSS Support
-- Indented Block Highlighting
-- Live Sass Compiler
+- **Indented Block Highlighting**
+- Jupyter
+- Language Support for Java(TM) by Red Hat
 - Live Server
 - Live Share
 - Markdown All in One
 - **Material Icon Theme**
 - **One Dark Pro**
+- Path Intellisense
 - PHP Intelephense
 - Polacode
 - **Prettier - Code formatter**
+- Pylance
 - Python
+- Rainbow CSV
 - Remote - SHH
 - Vetur
 - Visual Studio IntelliCode
+- YAML
