@@ -3,8 +3,9 @@
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "Cascadia Code, Consolas",
   "editor.fontLigatures": true,
-  "editor.fontSize": 16,
+  // "editor.fontSize": 16,
   "editor.tabSize": 2,
+  "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.minimap.enabled": false,
@@ -16,13 +17,15 @@
   "terminal.integrated.cursorBlinking": true,
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
 
   "python.formatting.provider": "black",
 
   "cSpell.language": "en-GB",
 
   "blockhighlight.background": ["255", "255", "255", ".025"],
+
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
   "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -34,8 +37,5 @@
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-
-  "python.pythonPath": "C:\\Program Files\\Python39\\python.exe",
-  "python.defaultInterpreterPath": "C:\\Program Files\\Python39\\python.exe"
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
 }

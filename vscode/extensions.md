@@ -1,8 +1,8 @@
 - Auto Close Tag
 - Auto Rename Tag
 - Better Comments
-- C/C++
-- C#
+- _C/C++_
+- _C#_
 - **Code Spell Checker**
 - ES7 React/Redux/GraphQL/React-Native snippets
 - ESLint
@@ -19,7 +19,7 @@
 - **Material Icon Theme**
 - **One Dark Pro**
 - Path Intellisense
-- PHP Intelephense
+- _PHP Intelephense_
 - Polacode
 - **Prettier - Code formatter**
 - Pylance
