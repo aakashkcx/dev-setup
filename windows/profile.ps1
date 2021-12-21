@@ -19,9 +19,9 @@ function Prompt {
 
 }
 
-function GDrive { Set-Location "~\Google Drive\" }
+function GDrive { Set-Location "~\My Drive\" }
 
-function Uni { Set-Location "~\Google Drive\University\" }
+function Uni { Set-Location "~\My Drive\University\" }
 
 function ll { ls.exe -AFhl }
 
