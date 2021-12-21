@@ -9,7 +9,7 @@
     - [Linux](#linux)
   - [Text Editors](#text-editors)
     - [Visual Studio Code](#visual-studio-code)
-    - [Sublime Text 3](#sublime-text-3)
+    - [Sublime Text](#sublime-text)
   - [Terminal](#terminal)
     - [Windows Terminal](#windows-terminal)
   - [Fonts](#fonts)
@@ -32,7 +32,7 @@
 
 - [windows/profile.ps1](windows/profile.ps1)
 
-```
+```powershell
 function Prompt {
 
   $User = (Get-ChildItem Env:\USERNAME).Value
@@ -54,9 +54,9 @@ function Prompt {
 
 }
 
-function GDrive { Set-Location "~\Google Drive\" }
+function GDrive { Set-Location "~\My Drive\" }
 
-function Uni { Set-Location "~\Google Drive\University\" }
+function Uni { Set-Location "~\My Drive\University\" }
 
 function ll { ls.exe -AFhl }
 
@@ -114,30 +114,35 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 ```markdown
 - Auto Close Tag
 - Auto Rename Tag
-- **Bracket Pair Colorizer 2**
-- C/C++
-- C#
+- Better Comments
+- _C/C++_
+- _C#_
 - **Code Spell Checker**
 - ES7 React/Redux/GraphQL/React-Native snippets
 - ESLint
-- Extension Pack for Java
+- _Extension Pack for Java_
 - **GitLens — Git supercharged**
-- Haskell
+- _Haskell_
 - HTML CSS Support
-- Indented Block Highlighting
-- Live Sass Compiler
+- **Indented Block Highlighting**
+- Jupyter
+- Language Support for Java(TM) by Red Hat
 - Live Server
 - Live Share
 - Markdown All in One
 - **Material Icon Theme**
 - **One Dark Pro**
-- PHP Intelephense
+- Path Intellisense
+- _PHP Intelephense_
 - Polacode
 - **Prettier - Code formatter**
+- Pylance
 - Python
+- Rainbow CSV
 - Remote - SHH
 - Vetur
 - Visual Studio IntelliCode
+- YAML
 ```
 
 - [vscode/settings.json](vscode/settings.json)
@@ -146,33 +151,31 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 {
   "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "Fira Code, Consolas",
+  "editor.fontFamily": "Cascadia Code, Consolas",
   "editor.fontLigatures": true,
-  "editor.fontSize": 16,
+  // "editor.fontSize": 16,
   "editor.tabSize": 2,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.suggestSelection": "first",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
   "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "smooth",
   "terminal.integrated.fontFamily": "Cascadia Code, Consolas",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
 
-  "java.semanticHighlighting.enabled": true,
-  "java.configuration.checkProjectSettingsExclusions": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   "python.formatting.provider": "black",
-  "python.pythonPath": "C:\\Program Files\\Python39\\python.exe",
-  "python.defaultInterpreterPath": "C:\\Program Files\\Python39\\python.exe",
-
-  "blockhighlight.background": ["150", "150", "150", ".05"],
 
   "cSpell.language": "en-GB",
 
-  "git.ignoreLegacyWarning": true,
-  "remote.SSH.remotePlatform": {
-    "warwick": "linux"
-  },
+  "blockhighlight.background": ["255", "255", "255", ".025"],
+
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
   "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -182,9 +185,9 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
   "[python]": { "editor.defaultFormatter": "ms-python.python" },
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
 }
 ```
 
@@ -211,9 +214,9 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 ]
 ```
 
-### Sublime Text 3
+### Sublime Text
 
-- Add Sublime Text 3 to PATH: `C:\Program Files\Sublime Text 3`.
+- Add Sublime Text to PATH: `C:\Program Files\Sublime Text`.
 - In a terminal type `subl <filename/folder>`.
 
 ## Terminal
@@ -234,12 +237,12 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
       "keys": "ctrl+c"
     },
     {
-      "command": "find",
-      "keys": "ctrl+shift+f"
-    },
-    {
       "command": "paste",
       "keys": "ctrl+v"
+    },
+    {
+      "command": "find",
+      "keys": "ctrl+shift+f"
     },
     {
       "command": {
@@ -256,8 +259,9 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
   "profiles": {
     "defaults": {
       "acrylicOpacity": 0.75,
-      "colorScheme": "Dark",
-      "fontSize": 13,
+      "font": {
+        "face": "Cascadia Code"
+      },
       "padding": "10",
       "useAcrylic": true
     },
@@ -265,26 +269,16 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
       {
         "commandline": "powershell.exe",
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-        "hidden": false,
         "name": "Windows PowerShell"
       },
       {
         "commandline": "cmd.exe",
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-        "hidden": false,
         "name": "Command Prompt"
       },
       {
-        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-        "hidden": true,
-        "name": "Azure Cloud Shell",
-        "source": "Windows.Terminal.Azure"
-      },
-      {
-        "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
-        "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
         "name": "Git Bash",
-        "startingDirectory": "%USERPROFILE%",
+        "source": "Git",
         "suppressApplicationTitle": true
       },
       {
@@ -295,31 +289,6 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
       }
     ]
   },
-  "schemes": [
-    {
-      "background": "#111111",
-      "black": "#000000",
-      "blue": "#2266DD",
-      "brightBlack": "#666666",
-      "brightBlue": "#6699FF",
-      "brightCyan": "#66EEEE",
-      "brightGreen": "#33DD33",
-      "brightPurple": "#CC44CC",
-      "brightRed": "#FF5555",
-      "brightWhite": "#FFFFFF",
-      "brightYellow": "#FFDD88",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#22AAAA",
-      "foreground": "#DDDDDD",
-      "green": "#11AA11",
-      "name": "Dark",
-      "purple": "#992299",
-      "red": "#CC1111",
-      "selectionBackground": "#FFFFFF",
-      "white": "#EEEEEE",
-      "yellow": "#CCAA11"
-    }
-  ],
   "tabSwitcherMode": "disabled"
 }
 ```
