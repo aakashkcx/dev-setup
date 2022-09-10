@@ -1,27 +1,19 @@
 function Prompt {
 
-  $User = (Get-ChildItem Env:\USERNAME).Value
-  $Computer = (Get-ChildItem Env:\COMPUTERNAME).Value
-  $Time = Get-Date -Format "hh:mm:ss"
+  $User = "$ENV:USERNAME@$ENV:USERDOMAIN"
+  $Time = Get-Date -Format "dd/MM/yy hh:mm:ss tt"
   $CurrentDirectory = (Get-Location).Path.Replace($HOME,'~')
 
-  WRITE-HOST $User -NoNewLine -ForegroundColor Red
-  WRITE-HOST "@" -NoNewLine -ForegroundColor Red
-  WRITE-HOST $Computer -NoNewLine -ForegroundColor Red
-  WRITE-HOST " " -NoNewLine
-  WRITE-HOST $Time -NoNewLine -ForegroundColor Gray
-  WRITE-HOST " " -NoNewLine
-  WRITE-HOST $CurrentDirectory -NoNewLine -ForegroundColor Yellow
-  WRITE-HOST
+  WRITE-HOST "$User " -NoNewLine -ForegroundColor Red
+  WRITE-HOST "$Time " -NoNewLine -ForegroundColor Gray
+  WRITE-HOST "$CurrentDirectory" -ForegroundColor Yellow
   WRITE-HOST ">" -NoNewLine
 
   Return " "
 
 }
 
-function GDrive { Set-Location "~\My Drive\" }
-
-function Uni { Set-Location "~\My Drive\University\" }
+function Drive { Set-Location "~\My Drive\" }
 
 function ll { ls.exe -AFhl }
 

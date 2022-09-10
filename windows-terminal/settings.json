@@ -1,4 +1,5 @@
 {
+  "$help": "https://aka.ms/terminal-documentation",
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "actions": [
     {
@@ -30,25 +31,26 @@
   "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
   "profiles": {
     "defaults": {
-      "acrylicOpacity": 0.75,
       "font": {
         "face": "Cascadia Code"
       },
+      "opacity": 90,
       "padding": "10",
       "useAcrylic": true
     },
     "list": [
       {
-        "commandline": "powershell.exe",
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
         "name": "Windows PowerShell"
       },
       {
-        "commandline": "cmd.exe",
+        "commandline": "%SystemRoot%\\System32\\cmd.exe",
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "name": "Command Prompt"
       },
       {
+        "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
         "name": "Git Bash",
         "source": "Git",
         "suppressApplicationTitle": true
@@ -61,30 +63,5 @@
       }
     ]
   },
-  "schemes": [
-    {
-      "background": "#111111",
-      "black": "#000000",
-      "blue": "#2266DD",
-      "brightBlack": "#666666",
-      "brightBlue": "#6699FF",
-      "brightCyan": "#66EEEE",
-      "brightGreen": "#33DD33",
-      "brightPurple": "#CC44CC",
-      "brightRed": "#FF5555",
-      "brightWhite": "#FFFFFF",
-      "brightYellow": "#FFDD88",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#22AAAA",
-      "foreground": "#DDDDDD",
-      "green": "#11AA11",
-      "name": "Dark",
-      "purple": "#992299",
-      "red": "#CC1111",
-      "selectionBackground": "#FFFFFF",
-      "white": "#EEEEEE",
-      "yellow": "#CCAA11"
-    }
-  ],
   "tabSwitcherMode": "disabled"
 }

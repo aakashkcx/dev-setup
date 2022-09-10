@@ -4,8 +4,8 @@
 
 - [Development Setup](#development-setup)
   - [Table of Contents](#table-of-contents)
-  - [OS](#os)
-    - [Windows 10](#windows-10)
+  - [Operating System](#operating-system)
+    - [Windows 11](#windows-11)
     - [Linux](#linux)
   - [Text Editors](#text-editors)
     - [Visual Studio Code](#visual-studio-code)
@@ -14,9 +14,9 @@
     - [Windows Terminal](#windows-terminal)
   - [Fonts](#fonts)
 
-## OS
+## Operating System
 
-### Windows 10
+### Windows 11
 
 - [windows/.gitconfig](windows/.gitconfig)
 
@@ -35,28 +35,20 @@
 ```powershell
 function Prompt {
 
-  $User = (Get-ChildItem Env:\USERNAME).Value
-  $Computer = (Get-ChildItem Env:\COMPUTERNAME).Value
-  $Time = Get-Date -Format "hh:mm:ss"
+  $User = "$ENV:USERNAME@$ENV:USERDOMAIN"
+  $Time = Get-Date -Format "dd/MM/yy hh:mm:ss tt"
   $CurrentDirectory = (Get-Location).Path.Replace($HOME,'~')
 
-  WRITE-HOST $User -NoNewLine -ForegroundColor Red
-  WRITE-HOST "@" -NoNewLine -ForegroundColor Red
-  WRITE-HOST $Computer -NoNewLine -ForegroundColor Red
-  WRITE-HOST " " -NoNewLine
-  WRITE-HOST $Time -NoNewLine -ForegroundColor Gray
-  WRITE-HOST " " -NoNewLine
-  WRITE-HOST $CurrentDirectory -NoNewLine -ForegroundColor Yellow
-  WRITE-HOST
+  WRITE-HOST "$User " -NoNewLine -ForegroundColor Red
+  WRITE-HOST "$Time " -NoNewLine -ForegroundColor Gray
+  WRITE-HOST "$CurrentDirectory" -ForegroundColor Yellow
   WRITE-HOST ">" -NoNewLine
 
   Return " "
 
 }
 
-function GDrive { Set-Location "~\My Drive\" }
-
-function Uni { Set-Location "~\My Drive\University\" }
+function Drive { Set-Location "~\My Drive\" }
 
 function ll { ls.exe -AFhl }
 
@@ -104,8 +96,7 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 ## Text Editors
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Sublime Text 3](https://www.sublimetext.com/)
-- [Notepad++](https://notepad-plus-plus.org/)
+- [Sublime Text](https://www.sublimetext.com/)
 
 ### Visual Studio Code
 
@@ -154,35 +145,36 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
   "editor.fontFamily": "Cascadia Code, Consolas",
   "editor.fontLigatures": true,
   // "editor.fontSize": 16,
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
   "editor.minimap.enabled": false,
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorBlinking": "smooth",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
   "terminal.integrated.fontFamily": "Cascadia Code, Consolas",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
-
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-
-  "python.formatting.provider": "black",
 
   "cSpell.language": "en-GB",
 
   "blockhighlight.background": ["255", "255", "255", ".025"],
 
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "polacode.target": "snippet",
 
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "python.formatting.provider": "black",
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.tabSize": 4
+  },
+  "[java]": { "editor.defaultFormatter": "redhat.java" },
   "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[java]": { "editor.defaultFormatter": "redhat.java" },
-  "[python]": { "editor.defaultFormatter": "ms-python.python" },
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -227,6 +219,7 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 
 ```jsonc
 {
+  "$help": "https://aka.ms/terminal-documentation",
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "actions": [
     {
@@ -258,25 +251,26 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
   "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
   "profiles": {
     "defaults": {
-      "acrylicOpacity": 0.75,
       "font": {
         "face": "Cascadia Code"
       },
+      "opacity": 90,
       "padding": "10",
       "useAcrylic": true
     },
     "list": [
       {
-        "commandline": "powershell.exe",
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
         "name": "Windows PowerShell"
       },
       {
-        "commandline": "cmd.exe",
+        "commandline": "%SystemRoot%\\System32\\cmd.exe",
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "name": "Command Prompt"
       },
       {
+        "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
         "name": "Git Bash",
         "source": "Git",
         "suppressApplicationTitle": true
