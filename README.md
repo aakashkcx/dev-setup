@@ -49,10 +49,6 @@ function Prompt {
 }
 
 function Drive { Set-Location "~\My Drive\" }
-
-function ll { ls.exe -AFhl }
-
-function lsl { ls.exe -AFhl | less.exe }
 ```
 
 ### Linux
@@ -88,8 +84,6 @@ CYAN="\[\e[36m\]"
 WHITE="\[\e[37m\]"
 
 # Prompt
-# PS1="\u@\h \T \w\n$ "
-# PS1="${RESET}${BOLD}\u@\h ${RESET}\T ${BOLD}\w\n${RESET}$ "
 PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$ "
 ```
 
@@ -106,16 +100,14 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 - Auto Close Tag
 - Auto Rename Tag
 - Better Comments
-- _C/C++_
-- _C#_
 - **Code Spell Checker**
 - ES7 React/Redux/GraphQL/React-Native snippets
 - ESLint
 - _Extension Pack for Java_
 - **GitLens — Git supercharged**
-- _Haskell_
 - HTML CSS Support
 - **Indented Block Highlighting**
+- IntelliCode
 - Jupyter
 - Language Support for Java(TM) by Red Hat
 - Live Server
@@ -124,15 +116,13 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
 - **Material Icon Theme**
 - **One Dark Pro**
 - Path Intellisense
-- _PHP Intelephense_
 - Polacode
 - **Prettier - Code formatter**
 - Pylance
 - Python
 - Rainbow CSV
 - Remote - SHH
-- Vetur
-- Visual Studio IntelliCode
+- _Vetur_
 - YAML
 ```
 
@@ -144,22 +134,16 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "Cascadia Code, Consolas",
   "editor.fontLigatures": true,
-  // "editor.fontSize": 16,
   "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": true,
   "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "smooth",
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "terminal.integrated.fontFamily": "Cascadia Code, Consolas",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
-
-  "cSpell.language": "en-GB",
-
-  "blockhighlight.background": ["255", "255", "255", ".025"],
-
-  "polacode.target": "snippet",
 
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
@@ -179,7 +163,13 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  "cSpell.language": "en-GB",
+
+  "blockhighlight.background": ["255", "255", "255", ".025"],
+
+  "polacode.target": "snippet"
 }
 ```
 
@@ -262,21 +252,31 @@ PS1="${RESET}${BOLD}${RED}\u@\h ${RESET}${WHITE}\T ${BOLD}${YELLOW}\w\n${RESET}$
       {
         "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
         "name": "Windows PowerShell"
       },
       {
         "commandline": "%SystemRoot%\\System32\\cmd.exe",
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
         "name": "Command Prompt"
       },
       {
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "hidden": true,
+        "name": "Azure Cloud Shell",
+        "source": "Windows.Terminal.Azure"
+      },
+      {
         "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+        "hidden": false,
         "name": "Git Bash",
         "source": "Git",
         "suppressApplicationTitle": true
       },
       {
         "commandline": "ssh warwick",
+        "hidden": false,
         "icon": "https://d36jn9qou1tztq.cloudfront.net/static_war/render/id7/images/favicon-96x96.png",
         "name": "Warwick SSH",
         "suppressApplicationTitle": true

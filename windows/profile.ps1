@@ -14,7 +14,3 @@ function Prompt {
 }
 
 function Drive { Set-Location "~\My Drive\" }
-
-function ll { ls.exe -AFhl }
-
-function lsl { ls.exe -AFhl | less.exe }
