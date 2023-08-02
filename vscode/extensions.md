@@ -1,16 +1,13 @@
-- Auto Close Tag
-- Auto Rename Tag
 - Better Comments
-- _C/C++_
-- _C#_
+- Black Formatter
 - **Code Spell Checker**
-- ES7 React/Redux/GraphQL/React-Native snippets
+- ES7+ React/Redux/React-Native snippets
 - ESLint
-- _Extension Pack for Java_
+- GitHub Actions
 - **GitLens — Git supercharged**
-- _Haskell_
 - HTML CSS Support
 - **Indented Block Highlighting**
+- IntelliCode
 - Jupyter
 - Language Support for Java(TM) by Red Hat
 - Live Server
@@ -19,11 +16,10 @@
 - **Material Icon Theme**
 - **One Dark Pro**
 - Path Intellisense
-- _PHP Intelephense_
 - Polacode
 - **Prettier - Code formatter**
-- Pylance
 - Python
+- Python Environment Manager
 - Rainbow CSV
 - Remote - SHH
 - Vetur

@@ -3,6 +3,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "Cascadia Code, Consolas",
   "editor.fontLigatures": true,
+  "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": true,
   "editor.smoothScrolling": true,
@@ -17,12 +18,8 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "python.formatting.provider": "black",
 
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python",
-    "editor.tabSize": 4
-  },
+  "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
   "[java]": { "editor.defaultFormatter": "redhat.java" },
   "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -36,7 +33,5 @@
 
   "cSpell.language": "en-GB",
 
-  "blockhighlight.background": ["255", "255", "255", ".025"],
-
-  "polacode.target": "snippet"
+  "blockhighlight.background": ["255", "255", "255", ".025"]
 }
