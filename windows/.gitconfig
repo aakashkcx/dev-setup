@@ -5,3 +5,5 @@
 	autocrlf = true
 [color]
 	ui = true
+[init]
+	defaultBranch = main

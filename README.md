@@ -30,6 +30,8 @@
   	autocrlf = true
   [color]
   	ui = true
+  [init]
+  	defaultBranch = main
   ```
 
 - [windows/profile.ps1](windows/profile.ps1)
@@ -59,6 +61,8 @@
 
 - [linux/.gitconfig](linux/.gitconfig)
 
+  `$HOME\.gitconfig`
+
   ```
   [user]
   	name = Aakash Kc
@@ -67,9 +71,13 @@
   	autocrlf = input
   [color]
   	ui = true
+  [init]
+  	defaultBranch = main
   ```
 
 - [linux/.bashrc](linux/.bashrc)
+
+  `$HOME/.bashrc`
 
   ```bash
   # Aliases
@@ -107,13 +115,11 @@
   - ES7+ React/Redux/React-Native snippets
   - ESLint
   - GitHub Actions
-  - **GitLens — Git supercharged**
-  - HTML CSS Support
+  - GitLens — Git supercharged
   - **Indented Block Highlighting**
   - IntelliCode
   - Jupyter
-  - Language Support for Java(TM) by Red Hat
-  - Live Server
+  - Live Preview
   - Live Share
   - Markdown All in One
   - **Material Icon Theme**
@@ -122,11 +128,8 @@
   - Polacode
   - **Prettier - Code formatter**
   - Python
-  - Python Environment Manager
+  - Pylance
   - Rainbow CSV
-  - Remote - SHH
-  - Vetur
-  - Visual Studio IntelliCode
   - YAML
   ```
 
@@ -139,7 +142,7 @@
     "editor.fontFamily": "Cascadia Code, Consolas",
     "editor.fontLigatures": true,
     "editor.linkedEditing": true,
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "editor.stickyScroll.enabled": true,
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": "on",
@@ -153,6 +156,7 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "notebook.formatOnSave.enabled": true,
 
     "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
     "[java]": { "editor.defaultFormatter": "redhat.java" },
@@ -163,16 +167,13 @@
     "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
     "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
     "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-    "[javascriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
     "cSpell.language": "en-GB",
 
     "blockhighlight.background": ["255", "255", "255", ".025"]
+  }
   }
   ```
 

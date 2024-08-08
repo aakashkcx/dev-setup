@@ -4,13 +4,11 @@
 - ES7+ React/Redux/React-Native snippets
 - ESLint
 - GitHub Actions
-- **GitLens — Git supercharged**
-- HTML CSS Support
+- GitLens — Git supercharged
 - **Indented Block Highlighting**
 - IntelliCode
 - Jupyter
-- Language Support for Java(TM) by Red Hat
-- Live Server
+- Live Preview
 - Live Share
 - Markdown All in One
 - **Material Icon Theme**
@@ -19,9 +17,6 @@
 - Polacode
 - **Prettier - Code formatter**
 - Python
-- Python Environment Manager
+- Pylance
 - Rainbow CSV
-- Remote - SHH
-- Vetur
-- Visual Studio IntelliCode
 - YAML
