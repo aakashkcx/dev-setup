@@ -24,8 +24,8 @@
 
   ```
   [user]
-  	name = Aakash Kc
-  	email = aakashkcx@gmail.com
+  	name = <name>
+  	email = <email>
   [core]
   	autocrlf = true
   [color]
@@ -65,8 +65,8 @@
 
   ```
   [user]
-  	name = Aakash Kc
-  	email = aakashkcx@gmail.com
+  	name = <name>
+  	email = <email>
   [core]
   	autocrlf = input
   [color]
