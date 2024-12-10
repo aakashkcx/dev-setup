@@ -1,6 +1,7 @@
 - Better Comments
 - Black Formatter
 - **Code Spell Checker**
+- Error Lens
 - ES7+ React/Redux/React-Native snippets
 - ESLint
 - GitHub Actions
