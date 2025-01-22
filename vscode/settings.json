@@ -3,9 +3,9 @@
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "Cascadia Code, Consolas",
   "editor.fontLigatures": true,
-  "editor.linkedEditing": true,
   "editor.minimap.enabled": true,
   "editor.stickyScroll.enabled": true,
+  "editor.linkedEditing": true,
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "smooth",
@@ -18,10 +18,12 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
   "notebook.formatOnSave.enabled": true,
 
   "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
-  "[java]": { "editor.defaultFormatter": "redhat.java" },
   "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -31,8 +33,9 @@
   "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" },
 
-  "cSpell.language": "en-GB",
+  "cSpell.language": "en-GB, en",
 
-  "blockhighlight.background": ["255", "255", "255", ".025"]
+  "blockhighlight.background": ["255", "255", "255", "0.025"]
 }

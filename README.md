@@ -109,29 +109,30 @@
 - [vscode/extensions.md](vscode/extensions.md)
 
   ```markdown
-  - Better Comments
-  - Black Formatter
-  - **Code Spell Checker**
-  - Error Lens
-  - ES7+ React/Redux/React-Native snippets
-  - ESLint
-  - GitHub Actions
-  - GitLens — Git supercharged
-  - **Indented Block Highlighting**
-  - IntelliCode
-  - Jupyter
-  - Live Preview
-  - Live Share
-  - Markdown All in One
-  - **Material Icon Theme**
-  - **One Dark Pro**
-  - Path Intellisense
-  - Polacode
-  - **Prettier - Code formatter**
-  - Python
-  - Pylance
-  - Rainbow CSV
-  - YAML
+  - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+  - [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
+  - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) ❤️
+  - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - [GitHub Actions](https://marketplace.visualstudio.com/items?itemName=github.vscode-github-actions)
+  - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+  - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+  - [Indented Block Highlighting](https://marketplace.visualstudio.com/items?itemName=byi8220.indented-block-highlighting) ❤️
+  - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+  - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+  - [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
+  - [Live Share](https://marketplace.visualstudio.com/items?itemName=ms-vsliveshare.vsliveshare)
+  - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+  - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) ❤️
+  - [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.material-theme) ❤️
+  - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+  - [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) ❤️
+  - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+  - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+  - [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
+  - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+  - [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
   ```
 
 - [vscode/settings.json](vscode/settings.json)
@@ -142,9 +143,9 @@
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "Cascadia Code, Consolas",
     "editor.fontLigatures": true,
-    "editor.linkedEditing": true,
     "editor.minimap.enabled": true,
     "editor.stickyScroll.enabled": true,
+    "editor.linkedEditing": true,
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorBlinking": "smooth",
@@ -157,10 +158,12 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
     "notebook.formatOnSave.enabled": true,
 
     "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
-    "[java]": { "editor.defaultFormatter": "redhat.java" },
     "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
     "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
     "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -168,13 +171,17 @@
     "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
     "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
     "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-    "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-    "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" },
 
-    "cSpell.language": "en-GB",
+    "cSpell.language": "en-GB, en",
 
-    "blockhighlight.background": ["255", "255", "255", ".025"]
-  }
+    "blockhighlight.background": ["255", "255", "255", "0.025"]
   }
   ```
 
