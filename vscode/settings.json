@@ -37,5 +37,7 @@
 
   "cSpell.language": "en-GB, en",
 
-  "blockhighlight.background": ["255", "255", "255", "0.025"]
+  "blockhighlight.background": ["255", "255", "255", "0.025"],
+
+  "github.copilot.nextEditSuggestions.enabled": true
 }
