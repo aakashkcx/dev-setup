@@ -1,9 +1,8 @@
 {
   "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "Cascadia Code, Consolas",
+  "editor.fontFamily": "Cascadia Code, Consolas, monospace",
   "editor.fontLigatures": true,
-  "editor.minimap.enabled": true,
   "editor.stickyScroll.enabled": true,
   "editor.linkedEditing": true,
   "editor.smoothScrolling": true,
@@ -11,7 +10,6 @@
   "editor.cursorBlinking": "smooth",
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
-  "terminal.integrated.fontFamily": "Cascadia Code, Consolas",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
 
@@ -23,7 +21,7 @@
   },
   "notebook.formatOnSave.enabled": true,
 
-  "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
+  "[python]": { "editor.defaultFormatter": "charliermarsh.ruff" },
   "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -35,9 +33,6 @@
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" },
 
-  "cSpell.language": "en-GB, en",
-
-  "blockhighlight.background": ["255", "255", "255", "0.025"],
-
-  "github.copilot.nextEditSuggestions.enabled": true
+  "oneDarkPro.editorTheme": "One Dark Pro Night Flat",
+  "cSpell.language": "en-GB, en"
 }
