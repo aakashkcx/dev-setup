@@ -1,9 +1,18 @@
 [user]
 	name = <name>
 	email = <email>
+	signingkey = ~/.ssh/id_ed25519_signing.pub
 [core]
 	autocrlf = true
 [color]
 	ui = true
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
