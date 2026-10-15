@@ -4,7 +4,6 @@
 - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) ❤️
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [GitHub Actions](https://marketplace.visualstudio.com/items?itemName=github.vscode-github-actions)
-- [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 - [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
