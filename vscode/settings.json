@@ -33,6 +33,7 @@
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" },
 
+  "git.autofetch": true,
   "oneDarkPro.editorTheme": "One Dark Pro Night Flat",
   "cSpell.language": "en-GB, en"
 }
