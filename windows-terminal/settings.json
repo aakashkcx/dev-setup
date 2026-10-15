@@ -28,10 +28,7 @@
     "defaults": {
       "font": {
         "face": "Cascadia Code"
-      },
-      "opacity": 90,
-      "padding": "10",
-      "useAcrylic": true
+      }
     },
     "list": [
       {
@@ -62,12 +59,10 @@
         "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
         "hidden": false,
         "name": "Git Bash",
-        "source": "Git",
-        "suppressApplicationTitle": true
+        "source": "Git"
       }
     ]
   },
   "schemes": [],
-  "tabSwitcherMode": "disabled",
   "themes": []
 }
